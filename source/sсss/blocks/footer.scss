@@ -1,0 +1,36 @@
+.footer {
+  padding: 0 15px;
+
+  @media (min-width: $vp-768) {
+    padding: 0 45px;
+  }
+
+  &__container {
+    max-width: 1198px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 36px 0;
+
+    @media (min-width: $vp-768) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $vp-1366) {
+      margin: 47px 0;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+
+    @media (min-width: $vp-768) {
+      font-size: 14px;
+    }
+  }
+}

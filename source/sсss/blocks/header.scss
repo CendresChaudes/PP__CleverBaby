@@ -1,0 +1,257 @@
+.header {
+  position: relative;
+
+  min-height: 77px;
+
+  &__container {
+    max-width: 1198px;
+    margin: 0 auto;
+  }
+
+  &__nav {
+    @media (min-width: $vp-1366) {
+      position: relative;
+
+      display: flex;
+
+      gap: 57px;
+    }
+  }
+
+  .is-open &__nav-toggle {
+    top: 32px;
+    left: 20px;
+
+    width: 15px;
+    height: 15px;
+
+    background-image: url("@img/decorative/header/close-icon.svg");
+    transform: rotate(0deg);
+
+    @media (min-width: $vp-768) {
+      left: 45px;
+
+      width: 18px;
+      height: 18px;
+    }
+
+    @media (min-width: $vp-1366) {
+      display: none;
+    }
+  }
+
+  &__nav-toggle {
+    position: absolute;
+    top: 33px;
+    left: 15px;
+
+    width: 25px;
+    height: 15px;
+    padding: 0;
+
+    background-color: $color-transparent;
+    background-image: url("@img/decorative/header/burger-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    transform: rotate(180deg);
+
+    transition: transform 500ms ease-out;
+
+    @media (min-width: $vp-768) {
+      top: 34px;
+      left: 45px;
+    }
+
+    @media (min-width: $vp-1366) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 33px;
+    left: 54px;
+
+    display: flex;
+    align-items: center;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $vp-768) {
+      top: 30px;
+      left: 94px;
+
+      height: 22px;
+    }
+
+    @media (min-width: $vp-1366) {
+      position: static;
+
+      height: 24px;
+      margin: 40px 0;
+    }
+  }
+
+  .is-open &__nav-wrapper {
+    position: absolute;
+    top: 77px;
+
+    display: block;
+    width: 100%;
+    padding: 0 15px 40px 15px;
+
+    background-color: $color-seashell;
+
+    @media (min-width: $vp-768) {
+      padding: 0 45px 46px 45px;
+    }
+
+    @media (min-width: $vp-1366) {
+      position: static;
+      padding: 0;
+    }
+  }
+
+  &__nav-wrapper {
+    display: none;
+
+    @media (min-width: $vp-1366) {
+      display: block;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $vp-1366) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 730px;
+      margin: 30px 0;
+    }
+  }
+
+  &__nav-item {
+    display: flex;
+  }
+
+  &__nav-link {
+    width: 100%;
+    padding: 6px 0;
+
+    font-weight: 500;
+    font-size: 18px;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $vp-768) {
+      font-size: 22px;
+    }
+
+    @media (min-width: $vp-1366) {
+      padding: 10px;
+
+      font-size: 16px;
+    }
+  }
+
+  .is-open &__nav-phone {
+    position: relative;
+
+    display: block;
+    margin-top: 18px;
+
+    @media (min-width: $vp-768) {
+      position: relative;
+      top: 0;
+      right: 0;
+
+      margin-top: 18px;
+    }
+
+    @media (min-width: $vp-1366) {
+      margin: 38px 0 38px auto;
+    }
+  }
+
+  &__nav-phone {
+    display: none;
+    padding-left: 24px;
+
+    font-weight: 500;
+    font-size: 18px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+
+      width: 15px;
+      height: 15px;
+
+      background-image: url("@img/decorative/header/phone-icon.svg");
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $vp-768) {
+      position: absolute;
+      top: 34px;
+      right: 45px;
+
+      display: block;
+      margin: 0;
+
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    @media (min-width: $vp-1366) {
+      position: relative;
+      top: 0;
+      right: 0;
+
+      margin: 38px 0 38px auto;
+    }
+  }
+}

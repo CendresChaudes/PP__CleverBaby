@@ -1,4 +1,5 @@
 import { testWebP } from './modules/utils';
+import { initMobileMenu } from './modules/mobile-menu';
 
 testWebP((support) => {
   if (support) {
@@ -8,3 +9,5 @@ testWebP((support) => {
 
   document.body.classList.add('no-webp');
 });
+
+initMobileMenu();

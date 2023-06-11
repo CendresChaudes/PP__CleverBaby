@@ -4,27 +4,49 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 150%;
-}
-
+html,
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   margin: 0;
   padding: 0;
 }
 
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fz-default;
+  line-height: 1.4;
+  font-family: $ff-montserrat;
+  color: $color-sapphire;
+  letter-spacing: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $color-seashell;
+}
+
 main {
   flex: 1 1 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -33,7 +55,9 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
+
   object-fit: cover;
 }
 
