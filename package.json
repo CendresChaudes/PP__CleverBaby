@@ -51,6 +51,7 @@
     "lint": "npm run editorconfig && npm run stylelint",
     "zip": "gulp makeZIP --build",
     "deploy": "gh-pages -d dist",
+    "fonts": "gulp convertFonts",
     "build": "gulp build --build",
     "dev": "gulp dev"
   },

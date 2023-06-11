@@ -10,14 +10,30 @@ $color-transparent: rgba(255, 255, 255, 0);
 // Project-palette
 // Для нейминга используется https://www.htmlcsscolor.com/hex/63D1BB
 
-// !$color-whisper: #ececec;
+$color-alice-blue: #f7fafc;
+$color-seashell: #fefcfa;
+$color-floral-white: #fdfaf5;
+$color-storm-grey: #677085;
+$color-sapphire: #122659;
+$color-anakiwa: #8dd9e5;
+$color-golden-glow: #ffd787;
+$color-cream-can: #f4c752;
+$color-pink: #feb9cc;
 
 // Typography
 //----------------------------------------------------------------------------
 
-// !$ff-open-sans: "Open Sans", "Arial", sans-serif;
+// Sizes
+
+$fz-default: 16px;
+
+// Fonts
+
+$ff-montserrat: "Montserrat", sans-serif;
+$ff-rubik: "Rubik", sans-serif;
 
 // Viewports
 //----------------------------------------------------------------------------
 
-// !$vp-768: 768px;
+$vp-1366: 1366px;
+$vp-768: 768px;

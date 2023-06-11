@@ -1,8 +1,27 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Open Sans";
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Montserrat";
 
-//   font-display: swap;
-//   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
-// }
+  font-display: swap;
+  src: url("@fonts/montserrat-regular.woff2") format("woff2"), url("@fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Montserrat";
+
+  font-display: swap;
+  src: url("@fonts/montserrat-medium.woff2") format("woff2"), url("@fonts/montserrat-medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Rubik";
+
+  font-display: swap;
+  src: url("@fonts/rubik-medium.woff2") format("woff2"), url("@fonts/rubik-medium.woff") format("woff");
+}
+

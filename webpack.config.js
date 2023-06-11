@@ -11,8 +11,6 @@ const path = {
   build: pathNode.resolve(buildFolder),
 }
 
-console.log(path.root);
-
 export const webpackConfig = (isMode) => ({
   entry: ['@babel/polyfill', `${path.source}/js/main.js`],
   mode: isMode ? 'development' : 'production',

@@ -1,2 +1,14 @@
+extends ../components/base/layout
 
+block variables
+  - var lang = 'ru'
+  - var title = 'Clever Baby'
 
+block content
+  main
+    include ../components/blocks/hero
+    include ../components/blocks/education
+    include ../components/blocks/groups
+    include ../components/blocks/teachers
+    include ../components/blocks/trial
+    include ../components/blocks/contacts

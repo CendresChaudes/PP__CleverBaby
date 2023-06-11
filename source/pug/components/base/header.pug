@@ -1,1 +1,15 @@
-
+header.header
+  .header__container
+    .header__nav
+      +btn("", "")(class="header__nav-toggle")
+        span.visually-hidden Открыть/закрыть меню навигации.
+      a.header__logo
+        img(src="@img/content/header/logo.svg" width="143" height="23" alt="Логотип сайта.")
+      nav.header__nav-wrapper
+        ul.header__nav-list
+          li.header__nav-item Методика
+          li.header__nav-item Преподаватели
+          li.header__nav-item Группы
+          li.header__nav-item Отзывы
+          li.header__nav-item Контакты
+        a.header__nav-phone(href="tel:+74959834719") + 7 (495) 983-47-19

@@ -31,7 +31,6 @@ export const path = {
     favicons: `${sourceFolder}/images/favicons/*`,
     svg: `${sourceFolder}/images/**/*.svg`,
     sprite: `${sourceFolder}/images/sprite/*.svg`,
-    fonts: `${sourceFolder}/fonts/**/*.{woff,woff2}`,
     other: `'${sourceFolder}/*.{ico,webmanifest}`
   },
   clean: buildFolder,

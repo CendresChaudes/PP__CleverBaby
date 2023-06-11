@@ -17,7 +17,7 @@ import { js } from './gulp/tasks/js.js';
 import { bitmap } from './gulp/tasks/bitmap.js';
 import { svg } from './gulp/tasks/svg.js';
 import { sprite } from './gulp/tasks/sprite.js';
-import { copyFonts } from './gulp/tasks/fonts.js';
+import { otfToWoff, copyFonts } from './gulp/tasks/fonts.js';
 import { server } from './gulp/tasks/server.js';
 import { clean } from './gulp/tasks/clean.js';
 import { copy } from './gulp/tasks/copy.js';
@@ -41,3 +41,5 @@ export const dev = gulp.series(clean, mainTasks, tools);
 export const build = gulp.series(clean, mainTasks, tools);
 
 export const makeZIP = gulp.series(clean, mainTasks, zip);
+
+export const convertFonts = gulp.series(otfToWoff);
