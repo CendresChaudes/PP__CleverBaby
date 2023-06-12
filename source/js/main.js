@@ -1,5 +1,6 @@
 import { testWebP } from './modules/utils';
 import { initMobileMenu } from './modules/mobile-menu';
+import { initSlider } from './modules/slider';
 
 testWebP((support) => {
   if (support) {
@@ -11,3 +12,4 @@ testWebP((support) => {
 });
 
 initMobileMenu();
+initSlider();

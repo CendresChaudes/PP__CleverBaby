@@ -1,7 +1,7 @@
 {
-  "name": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "name": "pp__cleverbaby",
   "private": true,
-  "description": "XXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "description": "CleverBaby website",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/polyfill": "^7.12.1",
@@ -9,6 +9,7 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "babel-loader": "^8.2.5",
     "browser-sync": "^2.27.7",
+    "css-loader": "6.8.1",
     "del": "^6.0.0",
     "eslint-config-htmlacademy": "9.0.0",
     "gh-pages": "^4.0.0",
@@ -37,6 +38,7 @@
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^5.1.0",
     "sass": "^1.45.1",
+    "style-loader": "3.3.3",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11",
     "webpack": "^5.65.0",
@@ -70,5 +72,8 @@
     "source/img/**/*.svg",
     "source/sass/**/*.scss"
   ],
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "swiper": "9.4.0"
+  }
 }
