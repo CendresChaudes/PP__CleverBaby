@@ -1,52 +1,54 @@
 section.teachers
   .container
-    h2.teachers__title.title Наши преподаватели
-    p.teachers__description Все наши преподаватели&nbsp;&mdash; носители английского языка и&nbsp;имеют необходимое образование и&nbsp;опыт работы с&nbsp;детьми
-    .slider
-      ul.slider__list
-        li.slider__item
-          picture
-            source(type="image/webp" media="(min-width: 1366px)" srcset="@img/content/teachers/teacher-1.webp 1x, @img/content/teachers/teacher-1@2x.webp 2x" width="220" height="219")
-            source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/teachers/teacher-1.webp 1x, @img/content/teachers/teacher-1@2x.webp 2x" width="206" height="205")
-            source(type="image/webp" srcset="@img/content/teachers/teacher-1.webp 1x, @img/content/teachers/teacher-1@2x.webp 2x" width="290" height="232")
-            source(media="(min-width: 1366px)" srcset="@img/content/teachers/teacher-1.jpg 1x, @img/content/teachers/teacher-1@2x.jpg 2x" width="220" height="219")
-            source(media="(min-width: 768px)" srcset="@img/content/teachers/teacher-1.jpg 1x, @img/content/teachers/teacher-1@2x.jpg 2x" width="206" height="205")
-            img(src="@img/content/teachers/teacher-1.jpg" srcset="@img/content/teachers/teacher-1@2x.jpg 2x" width="290" height="232" alt="Преподаватель Kate Smith.")
-          span.slider__name Kate Smith
-          span.slider__country США
-        li.slider__item
-          picture
-            source(type="image/webp" media="(min-width: 1366px)" srcset="@img/content/teachers/teacher-2.webp 1x, @img/content/teachers/teacher-2@2x.webp 2x" width="220" height="219")
-            source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/teachers/teacher-2.webp 1x, @img/content/teachers/teacher-2@2x.webp 2x" width="206" height="205")
-            source(type="image/webp" srcset="@img/content/teachers/teacher-2.webp 1x, @img/content/teachers/teacher-2@2x.webp 2x" width="290" height="232")
-            source(media="(min-width: 1366px)" srcset="@img/content/teachers/teacher-2.jpg 1x, @img/content/teachers/teacher-2@2x.jpg 2x" width="220" height="219")
-            source(media="(min-width: 768px)" srcset="@img/content/teachers/teacher-2.jpg 1x, @img/content/teachers/teacher-2@2x.jpg 2x" width="206" height="205")
-            img(src="@img/content/teachers/teacher-2.jpg" srcset="@img/content/teachers/teacher-2@2x.jpg 2x" width="290" height="232" alt="Преподаватель Samuel King.")
-          span.slider__name Samuel King
-          span.slider__country США
-        li.slider__item
-          picture
-            source(type="image/webp" media="(min-width: 1366px)" srcset="@img/content/teachers/teacher-3.webp 1x, @img/content/teachers/teacher-3@2x.webp 2x" width="220" height="219")
-            source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/teachers/teacher-3.webp 1x, @img/content/teachers/teacher-3@2x.webp 2x" width="206" height="205")
-            source(type="image/webp" srcset="@img/content/teachers/teacher-3.webp 1x, @img/content/teachers/teacher-3@2x.webp 2x" width="290" height="232")
-            source(media="(min-width: 1366px)" srcset="@img/content/teachers/teacher-3.jpg 1x, @img/content/teachers/teacher-3@2x.jpg 2x" width="220" height="219")
-            source(media="(min-width: 768px)" srcset="@img/content/teachers/teacher-3.jpg 1x, @img/content/teachers/teacher-3@2x.jpg 2x" width="206" height="205")
-            img(src="@img/content/teachers/teacher-3.jpg" srcset="@img/content/teachers/teacher-3@2x.jpg 2x" width="290" height="232" alt="Преподаватель Nikole Young.")
-          span.slider__name Nikole Young
-          span.slider__country Канада
-        li.slider__item
-          picture
-            source(type="image/webp" media="(min-width: 1366px)" srcset="@img/content/teachers/teacher-4.webp 1x, @img/content/teachers/teacher-4@2x.webp 2x" width="220" height="219")
-            source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/teachers/teacher-4.webp 1x, @img/content/teachers/teacher-4@2x.webp 2x" width="206" height="205")
-            source(type="image/webp" srcset="@img/content/teachers/teacher-4.webp 1x, @img/content/teachers/teacher-4@2x.webp 2x" width="290" height="232")
-            source(media="(min-width: 1366px)" srcset="@img/content/teachers/teacher-4.jpg 1x, @img/content/teachers/teacher-4@2x.jpg 2x" width="220" height="219")
-            source(media="(min-width: 768px)" srcset="@img/content/teachers/teacher-4.jpg 1x, @img/content/teachers/teacher-4@2x.jpg 2x" width="206" height="205")
-            img(src="@img/content/teachers/teacher-4.jpg" srcset="@img/content/teachers/teacher-4@2x.jpg 2x" width="290" height="232" alt="Преподаватель Karoline Bush.")
-          span.slider__name Karoline Bush
-          span.slider__country Канада
-      .slider__buttons-wrapper
-        +btn("", "")(class="slider__button slider__button--prev")
-          span.visually-hidden Предыдущий слайд.
-        +btn("", "")(class="slider__button slider__button--next")
-          span.visually-hidden Следующий слайд.
+    .teachers__decorative-wrapper
+      .teachers__text-wrapper
+        h2.teachers__title.title Наши преподаватели
+        p.teachers__description Все наши преподаватели&nbsp;&mdash; носители английского языка и&nbsp;имеют необходимое образование и&nbsp;опыт работы с&nbsp;детьми
+      .slider
+        ul.slider__list
+          li.slider__item
+            picture
+              source(type="image/webp" media="(min-width: 1250px)" srcset="@img/content/teachers/teacher-1.webp 1x, @img/content/teachers/teacher-1@2x.webp 2x" width="220" height="219")
+              source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/teachers/teacher-1.webp 1x, @img/content/teachers/teacher-1@2x.webp 2x" width="206" height="205")
+              source(type="image/webp" srcset="@img/content/teachers/teacher-1.webp 1x, @img/content/teachers/teacher-1@2x.webp 2x" width="290" height="232")
+              source(media="(min-width: 1250px)" srcset="@img/content/teachers/teacher-1.jpg 1x, @img/content/teachers/teacher-1@2x.jpg 2x" width="220" height="219")
+              source(media="(min-width: 768px)" srcset="@img/content/teachers/teacher-1.jpg 1x, @img/content/teachers/teacher-1@2x.jpg 2x" width="206" height="205")
+              img(src="@img/content/teachers/teacher-1.jpg" srcset="@img/content/teachers/teacher-1@2x.jpg 2x" width="290" height="232" alt="Преподаватель Kate Smith.")
+            h3.slider__name Kate Smith
+            p.slider__country США
+          li.slider__item
+            picture
+              source(type="image/webp" media="(min-width: 1250px)" srcset="@img/content/teachers/teacher-2.webp 1x, @img/content/teachers/teacher-2@2x.webp 2x" width="220" height="219")
+              source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/teachers/teacher-2.webp 1x, @img/content/teachers/teacher-2@2x.webp 2x" width="206" height="205")
+              source(type="image/webp" srcset="@img/content/teachers/teacher-2.webp 1x, @img/content/teachers/teacher-2@2x.webp 2x" width="290" height="232")
+              source(media="(min-width: 1250px)" srcset="@img/content/teachers/teacher-2.jpg 1x, @img/content/teachers/teacher-2@2x.jpg 2x" width="220" height="219")
+              source(media="(min-width: 768px)" srcset="@img/content/teachers/teacher-2.jpg 1x, @img/content/teachers/teacher-2@2x.jpg 2x" width="206" height="205")
+              img(src="@img/content/teachers/teacher-2.jpg" srcset="@img/content/teachers/teacher-2@2x.jpg 2x" width="290" height="232" alt="Преподаватель Samuel King.")
+            h3.slider__name Samuel King
+            p.slider__country США
+          li.slider__item
+            picture
+              source(type="image/webp" media="(min-width: 1250px)" srcset="@img/content/teachers/teacher-3.webp 1x, @img/content/teachers/teacher-3@2x.webp 2x" width="220" height="219")
+              source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/teachers/teacher-3.webp 1x, @img/content/teachers/teacher-3@2x.webp 2x" width="206" height="205")
+              source(type="image/webp" srcset="@img/content/teachers/teacher-3.webp 1x, @img/content/teachers/teacher-3@2x.webp 2x" width="290" height="232")
+              source(media="(min-width: 1250px)" srcset="@img/content/teachers/teacher-3.jpg 1x, @img/content/teachers/teacher-3@2x.jpg 2x" width="220" height="219")
+              source(media="(min-width: 768px)" srcset="@img/content/teachers/teacher-3.jpg 1x, @img/content/teachers/teacher-3@2x.jpg 2x" width="206" height="205")
+              img(src="@img/content/teachers/teacher-3.jpg" srcset="@img/content/teachers/teacher-3@2x.jpg 2x" width="290" height="232" alt="Преподаватель Nikole Young.")
+            h3.slider__name Nikole Young
+            p.slider__country Канада
+          li.slider__item
+            picture
+              source(type="image/webp" media="(min-width: 1250px)" srcset="@img/content/teachers/teacher-4.webp 1x, @img/content/teachers/teacher-4@2x.webp 2x" width="220" height="219")
+              source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/teachers/teacher-4.webp 1x, @img/content/teachers/teacher-4@2x.webp 2x" width="206" height="205")
+              source(type="image/webp" srcset="@img/content/teachers/teacher-4.webp 1x, @img/content/teachers/teacher-4@2x.webp 2x" width="290" height="232")
+              source(media="(min-width: 1250px)" srcset="@img/content/teachers/teacher-4.jpg 1x, @img/content/teachers/teacher-4@2x.jpg 2x" width="220" height="219")
+              source(media="(min-width: 768px)" srcset="@img/content/teachers/teacher-4.jpg 1x, @img/content/teachers/teacher-4@2x.jpg 2x" width="206" height="205")
+              img(src="@img/content/teachers/teacher-4.jpg" srcset="@img/content/teachers/teacher-4@2x.jpg 2x" width="290" height="232" alt="Преподаватель Karoline Bush.")
+            h3.slider__name Karoline Bush
+            p.slider__country Канада
+        .slider__buttons-wrapper
+          +btn("", "")(class="slider__button slider__button--prev")
+            span.visually-hidden Предыдущий слайд.
+          +btn("", "")(class="slider__button slider__button--next")
+            span.visually-hidden Следующий слайд.
 

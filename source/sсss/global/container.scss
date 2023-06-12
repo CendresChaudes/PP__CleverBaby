@@ -1,5 +1,13 @@
 .container {
   max-width: 970px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 60px 15px;
+
+  @media (min-width: $vp-768) {
+    padding: 110px 45px;
+  }
+
+  @media (min-width: $vp-1250) {
+    padding: 130px 50px;
+  }
 }

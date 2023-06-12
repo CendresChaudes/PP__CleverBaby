@@ -1,23 +1,22 @@
 header.header
-  .header__container
-    .header__nav
-      +btn("", "")(class="header__nav-toggle")
-        span.visually-hidden Открыть/закрыть меню навигации.
-      a.header__logo(href="#")
-        picture
-          source(media="(min-width: 1366px)" srcset="@img/content/header/logo.svg" width="143" height="23")
-          source(media="(min-width: 768px)" srcset="@img/content/header/logo.svg" width="132" height="21")
-          img(src="@img/content/header/logo.svg" width="112" height="17" alt="Логотип сайта.")
-      nav.header__nav-wrapper
-        ul.header__nav-list
-          li.header__nav-item
-            a.header__nav-link(href="#") Методика
-          li.header__nav-item
-            a.header__nav-link(href="#") Преподаватели
-          li.header__nav-item
-            a.header__nav-link(href="#") Группы
-          li.header__nav-item
-            a.header__nav-link(href="#") Отзывы
-          li.header__nav-item
-            a.header__nav-link(href="#") Контакты
-      a.header__nav-phone(href="tel:+74959834719") + 7 (495) 983-47-19
+  .header__nav
+    +btn("", "")(class="header__nav-toggle")
+      span.visually-hidden Открыть/закрыть меню навигации.
+    a.header__logo(href="#")
+      picture
+        source(media="(min-width: 1250px)" srcset="@img/content/header/logo.svg" width="143" height="23")
+        source(media="(min-width: 768px)" srcset="@img/content/header/logo.svg" width="132" height="21")
+        img(src="@img/content/header/logo.svg" width="112" height="17" alt="Логотип сайта.")
+    nav.header__nav-wrapper
+      ul.header__nav-list
+        li.header__nav-item
+          a.header__nav-link(href="#") Методика
+        li.header__nav-item
+          a.header__nav-link(href="#") Преподаватели
+        li.header__nav-item
+          a.header__nav-link(href="#") Группы
+        li.header__nav-item
+          a.header__nav-link(href="#") Отзывы
+        li.header__nav-item
+          a.header__nav-link(href="#") Контакты
+    a.header__nav-phone(href="tel:+74959834719") + 7 (495) 983-47-19

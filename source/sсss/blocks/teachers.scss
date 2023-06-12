@@ -1,0 +1,58 @@
+.teachers {
+  &__decorative-wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -58px;
+      right: -14px;
+
+      width: 30px;
+      height: 48px;
+
+      background-image: url("@img/decorative/teachers/house.svg");
+      background-size: 30px 48px;
+
+      @media (min-width: $vp-1250) {
+
+      }
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 41px 0;
+
+    @media (min-width: $vp-768) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 0 50px 0;
+    }
+
+    @media (min-width: $vp-1250) {
+      margin: 0 0 57px 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 29px 0;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.45;
+
+    @media (min-width: $vp-768) {
+      max-width: 261px;
+      margin: 10px 0 0 0;
+    }
+
+    @media (min-width: $vp-1250) {
+      max-width: 298px;
+
+      font-size: 16px;
+    }
+  }
+}

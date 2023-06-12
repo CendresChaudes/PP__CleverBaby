@@ -1,0 +1,155 @@
+.groups {
+  background-color: $color-alice-blue;
+
+  @media (min-width: $vp-768) {
+    background-color: initial;
+    background-image: url("@img/decorative/groups/background-tablet.png");
+  }
+
+  @media (min-width: $vp-1250) {
+    background-image: url("@img/decorative/groups/background-desktop.png");
+  }
+
+  &__decorative-wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -58px;
+      left: -14px;
+
+      width: 39px;
+      height: 40px;
+
+      background-image: url("@img/decorative/groups/star.svg");
+      background-size: 39px 40px;
+
+      @media (min-width: $vp-768) {
+        top: -40px;
+        left: -20px;
+      }
+
+      @media (min-width: $vp-1250) {
+        top: -60px;
+        left: -63px;
+
+        width: 56px;
+        height: 58px;
+
+        background-size: 56px 58px;
+      }
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 41px 0;
+
+    @media (min-width: $vp-768) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 0 50px 0;
+    }
+
+    @media (min-width: $vp-1250) {
+      margin: 0 0 57px 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 29px 0;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.45;
+
+    @media (min-width: $vp-768) {
+      max-width: 261px;
+      margin: 10px 0 0 0;
+    }
+
+    @media (min-width: $vp-1250) {
+      max-width: 298px;
+
+      font-size: 16px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    @media (min-width: $vp-768) {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    padding: 45px 15px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    &--anakiwa {
+      border: 3px solid $color-anakiwa;
+    }
+
+    &--golden-glow {
+      border: 3px solid $color-golden-glow;
+    }
+
+    &--pink {
+      border: 3px solid $color-pink;
+    }
+  }
+
+  &__item-title {
+    margin: 0 0 35px 0;
+
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__item-frequency {
+    margin: 0 0 20px 0;
+  }
+
+  &__item-duration {
+    margin: 0 0 20px 0;
+  }
+
+  &__item-cost-value {
+    position: relative;
+
+    padding: 0 20px 0 0;
+
+    font-weight: 500;
+    font-size: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 3px;
+
+      width: 11px;
+      height: 14px;
+
+      background-image: url("@img/decorative/groups/ruble-icon.svg");
+      background-size: 11px 14px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__item-sign-up {
+    margin: 35px 0 0 0;
+  }
+}

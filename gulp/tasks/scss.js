@@ -16,10 +16,10 @@ export const scss = () => app.gulp.src(app.path.source.scss, { sourcemaps: app.i
   .pipe(app.plugins.replace(/@img\//g, '../images/'))
   .pipe(app.plugins.replace(/@fonts\//g, '../fonts/'))
   .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
-  .pipe(app.plugins.if(app.isBuild, webpcss({
+  .pipe(webpcss({
     webpClass: '.webp',
     noWebpClass: '.no-webp'
-  })))
+  }))
   .pipe(autoPrefixer({
     grid: true,
     overrideBrowserslist: ['last 3 versions'],

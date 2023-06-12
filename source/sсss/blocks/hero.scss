@@ -1,0 +1,146 @@
+.hero {
+  position: relative;
+
+  background-color: $color-floral-white;
+
+  @media (min-width: $vp-768) {
+    background-color: initial;
+    background-image: url("@img/decorative/hero/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: $vp-1250) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+
+      width: 100%;
+      height: 100px;
+
+      background-image: url("@img/decorative/hero/background-mask-desktop.svg");
+    }
+  }
+
+  &__container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 60px 25px;
+
+    @media (min-width: $vp-768) {
+      padding: 92px 45px 133px 45px;
+    }
+
+    @media (min-width: $vp-1250) {
+      padding: 127px 0 160px 0;
+    }
+  }
+
+  &__decorative-wrapper {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -20px;
+
+      width: 48px;
+      height: 38px;
+
+      background-image: url("@img/decorative/hero/car.svg");
+      background-size: 48px 38px;
+
+      @media (min-width: $vp-768) {
+        top: -50px;
+        left: -20px;
+
+        width: 58px;
+        height: 46px;
+
+        background-size: 58px 46px;
+      }
+
+      @media (min-width: $vp-1250) {
+        top: -75px;
+        left: -130px;
+
+        width: 106px;
+        height: 84px;
+
+        background-size: 106px 84px;
+      }
+    }
+
+    &::before {
+      @media (min-width: $vp-1250) {
+        content: "";
+        position: absolute;
+        top: -75px;
+        right: -75px;
+
+        width: 91px;
+        height: 62px;
+
+        background-image: url("@img/decorative/hero/cloud.svg");
+        background-size: 91px 62px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+
+    font-weight: 500;
+    font-size: 28px;
+    font-family: $ff-rubik;
+
+    @media (min-width: $vp-768) {
+      font-size: 42px;
+    }
+
+    &--small {
+      display: block;
+
+      font-size: 16px;
+
+      @media (min-width: $vp-768) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 0 0 10px 0;
+
+    font-size: 14px;
+
+    @media (min-width: $vp-768) {
+      margin: 0 0 35px 0;
+
+      font-size: 16px;
+    }
+
+    & br {
+      display: none;
+
+      @media (min-width: $vp-768) {
+        display: block;
+      }
+    }
+  }
+
+  &__sign-up {
+    padding: 10px 23px;
+
+    font-size: 14px;
+
+    @media (min-width: $vp-768) {
+      padding: 14px 35px;
+
+      font-size: 16px;
+    }
+  }
+}

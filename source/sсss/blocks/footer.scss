@@ -5,9 +5,8 @@
     padding: 0 45px;
   }
 
-  &__container {
-    max-width: 1198px;
-    margin: 0 auto;
+  @media (min-width: $vp-1250) {
+    padding: 0 98px;
   }
 
   &__wrapper {
@@ -21,7 +20,7 @@
       justify-content: space-between;
     }
 
-    @media (min-width: $vp-1366) {
+    @media (min-width: $vp-1250) {
       margin: 47px 0;
     }
   }

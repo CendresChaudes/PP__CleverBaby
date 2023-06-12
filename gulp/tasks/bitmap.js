@@ -9,7 +9,9 @@ export const bitmap = () => app.gulp.src(app.path.source.bitmap)
     })
   ))
   .pipe(app.plugins.newer(app.path.build.images))
-  .pipe(webp())
+  .pipe(webp({
+    quality: 75,
+  }))
   .pipe(app.plugins.if(app.isBuild, app.gulp.dest(app.path.build.images)))
   .pipe(app.plugins.if(app.isBuild, app.gulp.src(app.path.source.bitmap)))
   .pipe(app.plugins.if(app.isBuild, app.plugins.newer(app.path.build.images)))

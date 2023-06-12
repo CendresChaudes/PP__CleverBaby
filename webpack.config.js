@@ -38,6 +38,10 @@ export const webpackConfig = (isMode) => ({
           fullySpecified: false,
         },
       },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
+      }
     ],
   },
 })
