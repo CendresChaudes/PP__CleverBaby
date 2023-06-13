@@ -45,15 +45,16 @@
 
   &__buttons-wrapper {
     position: absolute;
+    top: 250px;
+    z-index: 2;
 
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 250px;
-    z-index: 2;
 
     @media (min-width: $vp-768) {
       position: static;
+
       max-width: 46px;
       margin: 0 auto;
     }
