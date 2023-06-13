@@ -2,16 +2,30 @@
   margin: 0 auto;
   padding: 70px 40px;
 
-  background-image: url("@img/decorative/trial/background.png");
+  background-image: url("@img/decorative/trial/background-mobile.png");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-size: 100% 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("@img/decorative/trial/background-mobile@2x.png");
+  }
+
+  @media (min-width: $vp-768) {
+    background-image: url("@img/decorative/trial/background-tablet.png");
+    padding: 120px 40px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@img/decorative/trial/background-tablet@2x.png");
+    }
+  }
 
   @media (min-width: $vp-768) {
     padding: 120px 40px;
   }
 
   @media (min-width: $vp-1250) {
+    background-image: url("@img/decorative/trial/background-desktop@2x.png");
     padding: 100px 40px;
   }
 

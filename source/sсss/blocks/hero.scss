@@ -5,13 +5,19 @@
 
   @media (min-width: $vp-768) {
     background-color: initial;
-    background-image: url("@img/decorative/hero/background.png");
+    background-image: url("@img/decorative/hero/background-tablet.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("@img/decorative/hero/background-tablet@2x.png");
+    }
   }
 
   @media (min-width: $vp-1250) {
+    background-image: url("@img/decorative/hero/background-desktop@2x.png");
+
     &::after {
       content: "";
       position: absolute;

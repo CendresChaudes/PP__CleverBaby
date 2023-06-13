@@ -1,6 +1,4 @@
 .container {
-  max-width: 970px;
-  margin: 0 auto;
   padding: 60px 15px;
 
   @media (min-width: $vp-768) {
@@ -8,6 +6,8 @@
   }
 
   @media (min-width: $vp-1250) {
-    padding: 130px 50px;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 130px 0;
   }
 }

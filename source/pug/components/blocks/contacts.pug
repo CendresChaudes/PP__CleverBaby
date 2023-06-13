@@ -1,29 +1,39 @@
 section.contacts
-  h2.contacts__title.title Мы ждем вас
-  .contacts__list
-    .contacts__item
-      span.contacts__item-description Приходите к нам:
-      span.contacts__item-content Санкт-Петербург, ул. Большая Конюшенная, 19
-    .contacts__item
-      span.contacts__item-description Режим работы:
-      span.contacts__item-content Пн-Сб, с 9-00 до 20-00
-    .contacts__item
-      span.contacts__item-description Позвоните нам:
-      a.contacts__item-content(href="tel:+74959834719") + 7 (495) 983-47-19
-    .contacts__item
-      span.contacts__item-description Напишите нам:
-      a.contacts__item-content(href="mailto:info@cleverbaby.ru") info@cleverbaby.ru
-    .contacts__item
-      span.contacts__item-description Мы в соцсетях:
-      ul.contacts__socials-list
-        li.contacts__socials-item
-          a.contacts__socials-link.contacts__socials-link--facebook(href="#")
-            span.visually-hidden Мы в Facebook.
-        li.contacts__socials-item
-          a.contacts__socials-link.contacts__socials-link--vk(href="#")
-            span.visually-hidden Мы во Вконтакте.
-        li.contacts__socials-item
-          a.contacts__socials-link.contacts__socials-link--instagram(href="#")
-            span.visually-hidden Мы в Instagram.
+  .contacts__container
+    .contacts__content-wrapper
+      h2.contacts__title.title Мы ждем вас
+      .contacts__list
+        .contacts__item
+          p.contacts__item-description Приходите к нам:
+          p.contacts__item-content Санкт-Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19
+        .contacts__item
+          p.contacts__item-description Режим работы:
+          p.contacts__item-content Пн-Сб, с 9-00 до 20-00
+        .contacts__item
+          p.contacts__item-description Позвоните нам:
+          a.contacts__item-content(href="tel:+74959834719") + 7 (495) 983-47-19
+        .contacts__item
+          p.contacts__item-description Напишите нам:
+          a.contacts__item-content(href="mailto:info@cleverbaby.ru") info@cleverbaby.ru
+        .contacts__item
+          p.contacts__item-description Мы в соцсетях:
+          ul.contacts__socials-list
+            li.contacts__socials-item
+              a.contacts__socials-link.contacts__socials-link--facebook(href="#")
+                span.visually-hidden Мы в Facebook.
+            li.contacts__socials-item
+              a.contacts__socials-link.contacts__socials-link--vk(href="#")
+                span.visually-hidden Мы во Вконтакте.
+            li.contacts__socials-item
+              a.contacts__socials-link.contacts__socials-link--instagram(href="#")
+                span.visually-hidden Мы в Instagram.
+  .contacts__map.no-js#map
+    picture
+      source(type="image/webp" media="(min-width: 1250px)" srcset="@img/content/contacts/fallback-background-desktop@2x.webp" width="1366" height="611")
+      source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/contacts/fallback-background-tablet.webp 1x, @img/content/contacts/fallback-background-tablet@2x.webp 2x" width="768" height="438")
+      source(type="image/webp" srcset="@img/content/contacts/fallback-background-mobile.webp 1x, @img/content/contacts/fallback-background-mobile@2x.webp 2x" width="320" height="261")
+      source(media="(min-width: 1250px)" srcset="@img/content/contacts/fallback-background-desktop@2x.jpg" width="1366" height="611")
+      source(media="(min-width: 768px)" srcset="@img/content/contacts/fallback-background-tablet.jpg 1x, @img/content/contacts/fallback-background-tablet@2x.jpg 2x" width="768" height="438")
+      img(src="@img/content/contacts/fallback-background-mobile.jpg" srcset="@img/content/contacts/fallback-background-mobile@2x.jpg 2x" width="320" height="261" alt="Карта расположения.")
 
 

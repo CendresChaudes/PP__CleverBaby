@@ -3,11 +3,12 @@
 
   @media (min-width: $vp-768) {
     background-color: initial;
-    background-image: url("@img/decorative/groups/background-tablet.png");
+    background-image: url("@img/decorative/groups/background.png");
+    background-position: center top;
   }
 
   @media (min-width: $vp-1250) {
-    background-image: url("@img/decorative/groups/background-desktop.png");
+    background-position: center;
   }
 
   &__decorative-wrapper {

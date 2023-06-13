@@ -1,0 +1,156 @@
+.contacts {
+  position: relative;
+
+  padding: 60px 0 0 0;
+
+  @media (min-width: $vp-768) {
+    padding: 110px 0 0 0;
+  }
+
+  @media (min-width: $vp-1250) {
+    padding: 130px 0 70px 0;
+  }
+
+  &__container {
+    @media (min-width: $vp-1250) {
+      max-width: 970px;
+      margin: 0 auto;
+    }
+  }
+
+  &__content-wrapper {
+    position: relative;
+    z-index: 1;
+    padding: 60px 15px;
+
+    background-color: $color-alice-blue;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 4px 40px rgba(217, 217, 217, 0.3);
+
+    @media (min-width: $vp-768) {
+      padding: 80px 45px;
+    }
+
+    @media (min-width: $vp-1250) {
+      max-width: 413px;
+      padding: 70px 64px 70px 70px;
+
+      border-radius: 12px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px 0;
+
+    @media (min-width: $vp-768) {
+      margin: 0 0 25px 0;
+    }
+
+    @media (min-width: $vp-1250) {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    @media (min-width: $vp-768) {
+      display: grid;
+
+      gap: 50px;
+      grid-template-columns: repeat(2, 40.5%);
+    }
+
+    @media (min-width: $vp-1250) {
+      display: flex;
+      flex-direction: column;
+
+      gap: 20px;
+    }
+  }
+
+  &__item-description {
+    margin: 0 0 5px 0;
+
+    font-size: 14px;
+    line-height: 1.45;
+
+    @media (min-width: $vp-768) {
+      font-size: 16px;
+    }
+  }
+
+  &__item-content {
+    font-weight: 500;
+
+    @media (min-width: $vp-768) {
+      font-size: 18px;
+    }
+  }
+
+  &__socials-list {
+    display: flex;
+
+    gap: 15px;
+  }
+
+  &__socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__socials-link {
+    width: 24px;
+    height: 24px;
+
+    background-color: $color-default-white;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+    &--facebook {
+      background-image: url("@img/decorative/contacts/facebook-icon.svg");
+    }
+
+    &--vk {
+      background-image: url("@img/decorative/contacts/vk-icon.svg");
+    }
+
+    &--instagram {
+      background-image: url("@img/decorative/contacts/instagram-icon.svg");
+    }
+  }
+
+  &__map.no-js {
+    & img {
+      display: block;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  &__map {
+    min-height: 261px;
+
+    @media (min-width: $vp-768) {
+      min-height: 438px;
+    }
+
+    @media (min-width: $vp-1250) {
+      position: absolute;
+      top: 200px;
+      right: 0;
+      left: 0;
+
+      min-height: 611px;
+    }
+
+    & img {
+      display: none;
+    }
+  }
+}
