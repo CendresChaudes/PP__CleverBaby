@@ -21,6 +21,7 @@
   &__content-wrapper {
     position: relative;
     z-index: 1;
+
     padding: 60px 15px;
 
     background-color: $color-alice-blue;
@@ -111,6 +112,16 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
 
     &--facebook {
       background-image: url("@img/decorative/contacts/facebook-icon.svg");
