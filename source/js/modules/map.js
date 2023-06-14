@@ -1,8 +1,7 @@
-const MAP_CENTER_COORDINATES = [59.938631, 30.323037];
+const COORDINATES = [59.939300, 30.323300];
 const MAP_ZOOM = 17;
 const SEARCH_CONTROL_PROVIDER = 'yandex#search';
 
-const PLACEMARK_COORDINATES = [59.939300, 30.323300];
 const ICON_SIZE = [32, 39];
 const ICON_OFFSET = [-16, -32];
 const HINT_CONTENT = 'CleverBaby';
@@ -13,13 +12,13 @@ const mapContainer = document.querySelector('.contacts__map');
 
 const createMap = () => {
   const map = new ymaps.Map('map', {
-    center: MAP_CENTER_COORDINATES,
+    center: COORDINATES,
     zoom: MAP_ZOOM,
   }, {
     searchControlProvider: SEARCH_CONTROL_PROVIDER
   });
 
-  const placemark = new ymaps.Placemark(PLACEMARK_COORDINATES, {
+  const placemark = new ymaps.Placemark(COORDINATES, {
     hintContent: HINT_CONTENT,
   }, {
     iconLayout: ICON_LAYOUT,

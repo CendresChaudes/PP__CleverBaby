@@ -41,7 +41,7 @@
   }
 
   &__title {
-    margin: 0 0 20px 0;
+    margin: 0 0 18px 0;
 
     @media (min-width: $vp-768) {
       margin: 0 0 25px 0;
@@ -56,7 +56,7 @@
     display: flex;
     flex-direction: column;
 
-    gap: 15px;
+    gap: 17px;
 
     @media (min-width: $vp-768) {
       display: grid;
@@ -74,7 +74,7 @@
   }
 
   &__item-description {
-    margin: 0 0 5px 0;
+    margin: 0 0 3px 0;
 
     font-size: 14px;
     line-height: 1.45;
@@ -145,7 +145,7 @@
   }
 
   &__map {
-    min-height: 261px;
+    height: 261px;
 
     @media (min-width: $vp-768) {
       min-height: 438px;

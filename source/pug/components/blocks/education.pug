@@ -1,47 +1,46 @@
-section.education
+section.education#education
   .container
-    h2.education__title.title Как проходит обучение
-    .education__lessons
-      .education__lessons-content
-        h3.education__lessons-title.
-          Играя — обучаем,
-          #[br]
-          обучая — развиваем
-        p.education__lessons-text.
-          Мы взяли все самое лучшее из традиционных и&nbsp;современных методик обучения и развития детей.
-          Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам, а познают его через игру, сказки, книги и музыку.
-        p.education__lessons-text.
-          Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики без&nbsp;труда сдают международные и&nbsp;государственные экзамены.
-      .education__lessons-content
-        h3.education__lessons-title.
-          Посмотрите, как проходят
-          #[br]
-          наши занятия
-        .education__lessons-video
-          picture
-            source(type="image/webp" media="(min-width: 1250px)" srcset="@img/content/education/video-desktop@2x.webp" width="431" height="231")
-            source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/education/video-tablet.webp 1x, @img/content/education/video-tablet@2x.webp 2x" width="354" height="262")
-            source(type="image/webp" srcset="@img/content/education/video-mobile.webp 1x, @img/content/education/video-mobile@2x.webp 2x" width="290" height="262")
-            source(media="(min-width: 1250px)" srcset="@img/content/education/video-desktop@2x.jpg" width="431" height="231")
-            source(media="(min-width: 768px)" srcset="@img/content/education/video-tablet.jpg 1x, @img/content/education/video-tablet@2x.jpg 2x" width="354" height="262")
-            img(src="@img/content/education/video-mobile.jpg" srcset="@img/content/education/video-mobile@2x.jpg 2x" width="290" height="262" alt="Превью видео, на котором показан ребенок.")
-          +btn("", "")(class="education__lessons-video-play")
-            span.visually-hidden Включить видео.
-    .education__advantages
-      .education__advantages-content
-        h3.education__advantages-title Развитие 10 видов интеллекта
-        p.education__advantages-text Учимся общаться, развивать эмоциональный, творческий интеллект и&nbsp;многое другое
-      .education__advantages-content
-        h3.education__advantages-title Языковое погружение
-        p.education__advantages-text Занятия проходят полностью на&nbsp;английском языке, независимо от&nbsp;типа задания
-      .education__advantages-content
-        h3.education__advantages-title Педагоги — носители языка
-        p.education__advantages-text.
-          Занятия ведут преподаватели
-          #[br]
-          из&nbsp;США, Великобритании и&nbsp;Канады, для которых английский язык является родным
-      .education__advantages-content
-        h3.education__advantages-title Небольшие группы
-        p.education__advantages-text Дети занимаются в&nbsp;группах до&nbsp;5&nbsp;человек, что позволяет применять индивидуальный подход к&nbsp;каждому
-
-
+    .education__decorative-wrapper
+      h2.education__title.title Как проходит обучение
+      .education__lessons
+        .education__lessons-content
+          h3.education__lessons-title.
+            Играя — обучаем,
+            #[br]
+            обучая — развиваем
+          p.education__lessons-text.
+            Мы взяли все самое лучшее из традиционных и&nbsp;современных методик обучения и развития детей.
+            Обучение английскому языку происходит легко и интересно, ведь малыши не зубрят материал по учебникам, а познают его через игру, сказки, книги и музыку.
+          p.education__lessons-text.
+            Наша методика также включает в себя обучение по программе Cambridge. Благодаря этому, наши ученики без&nbsp;труда сдают международные и&nbsp;государственные экзамены.
+        .education__lessons-content
+          h3.education__lessons-title.
+            Посмотрите, как проходят
+            #[br]
+            наши занятия
+          .education__lessons-video
+            picture
+              source(type="image/webp" media="(min-width: 1250px)" srcset="@img/content/education/video-desktop@2x.webp" width="431" height="231")
+              source(type="image/webp" media="(min-width: 768px)" srcset="@img/content/education/video-tablet.webp 1x, @img/content/education/video-tablet@2x.webp 2x" width="354" height="262")
+              source(type="image/webp" srcset="@img/content/education/video-mobile.webp 1x, @img/content/education/video-mobile@2x.webp 2x" width="290" height="262")
+              source(media="(min-width: 1250px)" srcset="@img/content/education/video-desktop@2x.jpg" width="431" height="231")
+              source(media="(min-width: 768px)" srcset="@img/content/education/video-tablet.jpg 1x, @img/content/education/video-tablet@2x.jpg 2x" width="354" height="262")
+              img(src="@img/content/education/video-mobile.jpg" srcset="@img/content/education/video-mobile@2x.jpg 2x" width="290" height="262" alt="Превью видео, на котором показан ребенок.")
+            +btn("", "")(class="education__lessons-video-play")
+              span.visually-hidden Включить видео.
+      .education__advantages
+        .education__advantages-content
+          h3.education__advantages-title Развитие 10 видов интеллекта
+          p.education__advantages-text Учимся общаться, развивать эмоциональный, творческий интеллект и&nbsp;многое другое
+        .education__advantages-content
+          h3.education__advantages-title Языковое погружение
+          p.education__advantages-text Занятия проходят полностью на&nbsp;английском языке, независимо от&nbsp;типа задания
+        .education__advantages-content
+          h3.education__advantages-title Педагоги — носители языка
+          p.education__advantages-text.
+            Занятия ведут преподаватели
+            #[br]
+            из&nbsp;США, Великобритании и&nbsp;Канады, для которых английский язык является родным
+        .education__advantages-content
+          h3.education__advantages-title Небольшие группы
+          p.education__advantages-text Дети занимаются в&nbsp;группах до&nbsp;5&nbsp;человек, что позволяет применять индивидуальный подход к&nbsp;каждому

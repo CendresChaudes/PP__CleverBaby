@@ -14,6 +14,7 @@
       margin: 0 auto 10px auto;
 
       border-radius: 12px;
+      object-fit: contain;
     }
   }
 
@@ -23,6 +24,7 @@
 
     font-weight: 500;
     text-align: center;
+    font-size: 16px;
 
     @media (min-width: $vp-768) {
       max-width: 190px;
@@ -49,7 +51,7 @@
 
   &__buttons-wrapper {
     position: absolute;
-    top: 250px;
+    top: 246px;
     left: 50%;
     z-index: 2;
 
@@ -71,13 +73,13 @@
   }
 
   &__button {
-    width: 15px;
-    height: 8px;
+    width: 17px;
+    height: 10px;
 
     background-color: $color-transparent;
     background-image: url("@img/decorative/teachers/arrow.svg");
     background-repeat: no-repeat;
-    background-size: 15px 8px;
+    background-size: 17px 10px;
     border: none;
     cursor: pointer;
 
