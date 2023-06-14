@@ -149,6 +149,10 @@
     flex-direction: column;
     gap: 12px;
 
+    @media (min-width: $vp-768) {
+      gap: 17px;
+    }
+
     @media (min-width: $vp-1250) {
       display: flex;
       flex-direction: row;
@@ -240,8 +244,8 @@
 
     @media (min-width: $vp-768) {
       position: absolute;
-      top: 34px;
-      right: 45px;
+      top: 28px;
+      right: 49px;
 
       display: block;
       margin: 0;

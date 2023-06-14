@@ -15,8 +15,8 @@
       background-size: 67px 34px;
 
       @media (min-width: $vp-768) {
-        top: -40px;
-        left: -20px;
+        top: -39px;
+        right: 0;
 
         width: 101px;
         height: 50px;
@@ -42,7 +42,7 @@
     text-align: center;
 
     @media (min-width: $vp-768) {
-      margin: 0 0 40px 0;
+      margin: 0 0 31px 0;
     }
 
     @media (min-width: $vp-1250) {
@@ -59,7 +59,7 @@
 
     @media (min-width: $vp-768) {
       display: grid;
-      margin: 0 0 131px 0;
+      margin: 0 0 123px 0;
 
       gap: 40px;
       grid-template-columns: 41.8% 52.2%;
@@ -79,6 +79,7 @@
 
     @media (min-width: $vp-768) {
       font-size: 18px;
+      margin: 0 0 16px 0;
     }
 
     @media (min-width: $vp-1250) {
@@ -170,7 +171,7 @@
       column-gap: 0;
 
       grid-template-columns: repeat(2, 1fr);
-      row-gap: 75px;
+      row-gap: 67px;
     }
 
     @media (min-width: $vp-1250) {
@@ -224,8 +225,8 @@
         padding-bottom: 0;
 
         &::after {
-          bottom: -220px;
-          left: -157px;
+          bottom: -217px;
+          left: -155px;
 
           width: 353px;
           height: 354px;
@@ -240,11 +241,11 @@
       }
 
       &:nth-child(3) {
-        padding-top: 50px;
+        padding-top: 58px;
       }
     }
 
-    @media (min-width: $vp-768) {
+    @media (min-width: $vp-1250) {
       &:nth-child(2n-1) {
         padding: 30px 160px 0 0;
       }

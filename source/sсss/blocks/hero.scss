@@ -36,7 +36,7 @@
     padding: 50px 25px 61px 25px;
 
     @media (min-width: $vp-768) {
-      padding: 92px 45px 133px 45px;
+      padding: 81px 45px 133px 45px;
     }
 
     @media (min-width: $vp-1250) {
@@ -60,8 +60,8 @@
       background-size: 48px 38px;
 
       @media (min-width: $vp-768) {
-        top: -39px;
-        left: -22px;
+        top: -47px;
+        left: -35px;
 
         width: 58px;
         height: 46px;
@@ -105,6 +105,7 @@
 
     @media (min-width: $vp-768) {
       font-size: 42px;
+      margin: 0 0 14px 0;
     }
 
     &--small {
@@ -124,7 +125,7 @@
     font-size: 14px;
 
     @media (min-width: $vp-768) {
-      margin: 0 0 35px 0;
+      margin: 0 0 37px 0;
 
       font-size: 16px;
     }
