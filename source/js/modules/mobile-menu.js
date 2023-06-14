@@ -21,6 +21,8 @@ const onDocumentClick = (evt) => {
 };
 
 const initMobileMenu = () => {
+  navigation.classList.remove('no-js');
+
   navigationToggle.addEventListener('click', onNavigationToggleClick);
   document.addEventListener('click', onDocumentClick);
 };

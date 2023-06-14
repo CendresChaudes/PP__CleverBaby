@@ -39,6 +39,10 @@
     }
   }
 
+  .no-js &__nav-toggle {
+    display: none;
+  }
+
   &__nav-toggle {
     position: absolute;
     top: 33px;
@@ -106,6 +110,23 @@
     z-index: 10;
 
     display: block;
+
+    @media (min-width: $vp-1250) {
+      position: static;
+
+      padding: 0;
+    }
+  }
+
+  .no-js &__nav-wrapper {
+    position: static;
+
+    display: block;
+    margin: 77px 0 0 0;
+  }
+
+  &__nav-wrapper {
+    display: none;
     width: 100%;
     padding: 0 15px 40px 15px;
 
@@ -118,15 +139,8 @@
     @media (min-width: $vp-1250) {
       position: static;
 
-      padding: 0;
-    }
-  }
-
-  &__nav-wrapper {
-    display: none;
-
-    @media (min-width: $vp-1250) {
       display: block;
+      padding: 0;
     }
   }
 
