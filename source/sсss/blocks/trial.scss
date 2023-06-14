@@ -1,5 +1,4 @@
 .trial {
-  margin: 0 auto;
   padding: 60px 40px;
 
   background-image: url("@img/decorative/trial/background-mobile.png");
@@ -12,8 +11,9 @@
   }
 
   @media (min-width: $vp-768) {
-    background-image: url("@img/decorative/trial/background-tablet.png");
     padding: 120px 40px 100px;
+
+    background-image: url("@img/decorative/trial/background-tablet.png");
 
     @media (min-resolution: 2dppx) {
       background-image: url("@img/decorative/trial/background-tablet@2x.png");
@@ -21,8 +21,12 @@
   }
 
   @media (min-width: $vp-1250) {
+    min-height: 453px;
+    padding: 50px 40px;
+
     background-image: url("@img/decorative/trial/background-desktop@2x.png");
-    padding: 100px 40px;
+    display: flex;
+    align-items: center;
   }
 
   &__container {
@@ -71,16 +75,16 @@
     @media (min-width: $vp-1250) {
       &::after {
         top: 25px;
-        left: -220px;
+        left: -270px;
 
-        width: 155px;
-        height: 107px;
+        width: 160px;
+        height: 125px;
 
-        background-size: 155px 107px;
+        background-size: 160px 125px;
       }
 
       &::before {
-        top: 55px;
+        top: 60px;
         right: -190px;
 
         width: 118px;
@@ -97,6 +101,10 @@
     @media (min-width: $vp-768) {
       line-height: 1.25;
     }
+
+    @media (min-width: $vp-1250) {
+      margin: 0 0 20px 0;
+    }
   }
 
   &__description {
@@ -107,12 +115,13 @@
     color: $color-seashell;
 
     @media (min-width: $vp-768) {
-      margin: 0 auto 30px auto;
       max-width: 318px;
+      margin: 0 auto 30px auto;
     }
 
     @media (min-width: $vp-1250) {
       max-width: 360px;
+      margin: 0 auto 36px auto;
 
       font-size: 16px;
     }

@@ -25,13 +25,28 @@
       }
 
       @media (min-width: $vp-1250) {
-        top: -60px;
-        left: -63px;
+        top: -55px;
+        right: -43px;
 
         width: 135px;
         height: 68px;
 
         background-size: 135px 68px;
+      }
+    }
+
+    @media (min-width: $vp-1250) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 125px;
+        left: -160px;
+
+        width: 105px;
+        height: 115px;
+
+        background-image: url("@img/decorative/education/girl.svg");
+        background-size: 105px 115px;
       }
     }
   }
@@ -46,7 +61,7 @@
     }
 
     @media (min-width: $vp-1250) {
-      margin: 0 0 50px 0;
+      margin: 0 0 60px 0;
     }
   }
 
@@ -68,6 +83,7 @@
     @media (min-width: $vp-1250) {
       gap: 86px;
       grid-template-columns: 42.8% 44.5%;
+      margin: 0 0 150px 0;
     }
   }
 
@@ -97,6 +113,10 @@
 
     &:not(:last-child) {
       margin: 0 0 10px 0;
+
+      @media (min-width: $vp-1250) {
+        margin: 0 0 14px 0;
+      }
     }
 
     @media (min-width: $vp-768) {
@@ -247,7 +267,7 @@
 
     @media (min-width: $vp-1250) {
       &:nth-child(2n-1) {
-        padding: 30px 160px 0 0;
+        padding: 45px 160px 0 0;
       }
 
       &:nth-child(2n) {
@@ -258,8 +278,8 @@
         padding-bottom: 0;
 
         &::after {
-          bottom: -305px;
-          left: -284px;
+          bottom: -288px;
+          left: -300px;
 
           width: 596px;
           height: 471px;
@@ -274,7 +294,7 @@
       }
 
       &:nth-child(3) {
-        padding-top: 60px;
+        padding-top: 69px;
       }
     }
   }
@@ -292,7 +312,7 @@
     }
 
     @media (min-width: $vp-1250) {
-      margin: 0 0 2px 0;
+      margin: 0 0 11px 0;
 
       font-size: 20px;
     }

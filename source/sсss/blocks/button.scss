@@ -10,6 +10,10 @@
 
   transition: opacity 200ms ease-out;
 
+  @media (min-width: $vp-1250) {
+    padding: 12px 34px;
+  }
+
   @media (hover: hover) {
     &:hover {
       opacity: 0.75;

@@ -13,7 +13,7 @@
 
       display: flex;
 
-      gap: 57px;
+      gap: 47px;
     }
   }
 
@@ -99,6 +99,7 @@
     @media (min-width: $vp-1250) {
       position: static;
 
+      flex-shrink: 0;
       height: 24px;
       margin: 40px 0;
     }
@@ -147,6 +148,7 @@
   &__nav-list {
     display: flex;
     flex-direction: column;
+
     gap: 12px;
 
     @media (min-width: $vp-768) {
@@ -159,6 +161,8 @@
       flex-wrap: wrap;
       max-width: 730px;
       margin: 30px 0;
+
+      gap: 2px;
     }
   }
 
@@ -259,6 +263,7 @@
       top: 0;
       right: 0;
 
+      flex-shrink: 0;
       margin: 38px 0 38px auto;
     }
   }

@@ -40,7 +40,7 @@
     }
 
     @media (min-width: $vp-1250) {
-      padding: 127px 0 160px 0;
+      padding: 113px 0 160px 0;
     }
   }
 
@@ -70,8 +70,8 @@
       }
 
       @media (min-width: $vp-1250) {
-        top: -75px;
-        left: -130px;
+        top: -77px;
+        left: -134px;
 
         width: 106px;
         height: 84px;
@@ -84,8 +84,8 @@
       @media (min-width: $vp-1250) {
         content: "";
         position: absolute;
-        top: -75px;
-        right: -75px;
+        top: -49px;
+        right: -115px;
 
         width: 91px;
         height: 62px;
@@ -106,6 +106,10 @@
     @media (min-width: $vp-768) {
       font-size: 42px;
       margin: 0 0 14px 0;
+    }
+
+    @media (min-width: $vp-1250) {
+      margin: 0 0 20px 0;
     }
 
     &--small {
