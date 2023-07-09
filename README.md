@@ -16,4 +16,4 @@
 
 ---
 
-Ссылка на проект: [https://cendreschaudes.github.io/PP__CleverBaby/]
+Ссылка на проект: https://cendreschaudes.github.io/PP__CleverBaby/
