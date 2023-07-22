@@ -11,13 +11,13 @@
 
   &__item {
     & img {
-      margin: 0 0 10px 0;
+      margin: 0 auto 10px auto;
 
       border-radius: 12px;
       object-fit: contain;
 
       @media (min-width: $vp-768) {
-        margin: 0 0 15px 0;
+        margin: 0 auto 15px auto;
       }
     }
   }
