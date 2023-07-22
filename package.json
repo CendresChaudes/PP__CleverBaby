@@ -44,6 +44,9 @@
     "webpack": "^5.65.0",
     "webpack-stream": "^7.0.0"
   },
+  "dependencies": {
+    "swiper": "9.4.0"
+  },
   "engines": {
     "node": "^16"
   },
@@ -72,8 +75,5 @@
     "source/img/**/*.svg",
     "source/sass/**/*.scss"
   ],
-  "type": "module",
-  "dependencies": {
-    "swiper": "9.4.0"
-  }
+  "type": "module"
 }
